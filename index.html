@@ -3,89 +3,126 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy — Baloot</title>
+<title>Baloot — support</title>
+<meta name="description" content="Support for Baloot, a scorekeeping app for the card game Baloot. Works offline, collects nothing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-    max-width: 38rem;
-    margin: 0 auto;
-    padding: 3rem 1.25rem 5rem;
-    line-height: 1.7;
-    color: #16150F;
-    background: #FAFAF8;
-  }
+  :root { color-scheme: light dark; --ink:#16150F; --bg:#FAFAF8; --muted:#76736A; --line:#E3E0D7; --card:#FFFFFF; }
   @media (prefers-color-scheme: dark) {
-    body { color: #F4F2ED; background: #101010; }
-    h1, h2 { color: #F4F2ED; }
-    .ar { border-color: #33322E; }
+    :root { --ink:#F4F2ED; --bg:#101010; --muted:#9C9990; --line:#33322E; --card:#1B1B1A; }
   }
-  h1 { font-size: 1.6rem; font-weight: 500; margin-bottom: 0.25rem; }
-  h2 { font-size: 1.1rem; font-weight: 500; margin-top: 2.25rem; }
-  .updated { color: #76736A; font-size: 0.9rem; margin-top: 0; }
-  .ar { direction: rtl; text-align: right; margin-top: 3.5rem; border-top: 1px solid #E3E0D7; padding-top: 2rem; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    max-width: 40rem; margin: 0 auto; padding: 3.5rem 1.25rem 5rem;
+    line-height: 1.75; color: var(--ink); background: var(--bg);
+  }
+  .mark {
+    width: 74px; height: 74px; border: 1px solid var(--line); border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; font-weight: 500; background: var(--card); margin-bottom: 1.25rem;
+  }
+  h1 { font-size: 1.7rem; font-weight: 500; margin: 0 0 .35rem; }
+  h2 { font-size: 1.05rem; font-weight: 500; margin: 2.5rem 0 .5rem; }
+  h3 { font-size: .98rem; font-weight: 500; margin: 1.5rem 0 .2rem; }
+  p { margin: .4rem 0; }
+  .lede { color: var(--muted); margin-bottom: 2rem; }
+  a { color: var(--ink); text-underline-offset: 3px; }
+  .contact {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1.1rem 1.25rem; margin: 1rem 0 0;
+  }
+  .contact p { margin: 0; }
+  .label { font-size: .85rem; color: var(--muted); }
+  .ar { direction: rtl; text-align: right; margin-top: 4rem; border-top: 1px solid var(--line); padding-top: 2.5rem; }
+  footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-size: .85rem; color: var(--muted); }
 </style>
 </head>
 <body>
 
-<h1>Privacy policy — Baloot</h1>
-<p class="updated">Last updated 22 September 2026</p>
-
-<p>Baloot is a scorekeeping app for the card game Baloot. It collects no
-personal data of any kind.</p>
-
-<h2>What the app collects</h2>
-<p>Nothing. The app has no analytics, no advertising, no crash reporting, no
-accounts and no tracking of any kind.</p>
-
-<h2>What the app stores</h2>
-<p>Your match scores, round history and settings are saved on your own device
-so the app can pick up where you left off. This information never leaves your
-device, is never transmitted anywhere, and is not readable by anyone else. It
-is deleted when you delete the app.</p>
-
-<h2>Network access</h2>
-<p>The app contains no networking code. It works fully offline and makes no
-requests to any server, including ours.</p>
-
-<h2>Third parties</h2>
-<p>No data is shared with third parties, because none is collected. The app
-contains no third-party SDKs for advertising or analytics.</p>
-
-<h2>Children</h2>
-<p>The app is suitable for all ages and collects no data from anyone,
-including children.</p>
-
-<h2>Changes</h2>
-<p>If this policy ever changes, the updated version will be posted at this
-address with a new date.</p>
+<div class="mark">152</div>
+<h1>Baloot</h1>
+<p class="lede">A scoresheet for the card game Baloot. Works offline, no account, collects nothing.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:support@walhajri.me">support@walhajri.me</a></p>
+<div class="contact">
+  <p class="label">Support</p>
+  <p><a href="mailto:support@walhajri.me">support@walhajri.me</a></p>
+</div>
+<p class="label" style="margin-top:.6rem">Questions, bugs, or a house rule the app gets wrong — write any time.</p>
+
+<h2>Common questions</h2>
+
+<h3>How do I enter a round?</h3>
+<p>Pick Hokom or Sun, mark which team bought the round, and type one team's raw
+points. The app derives the other team's points, converts both to game points,
+and adds them to the running total.</p>
+
+<h3>What are the three entry modes?</h3>
+<p><strong>Raw points</strong> — type the أبناط and the app converts.
+<strong>Score</strong> — type the already-converted points, capped at 16 in Hokom
+and 26 in Sun. <strong>Manual</strong> — type each team's score yourself and the
+app adds exactly what you typed, with no conversion at all.</p>
+
+<h3>My table plays a rule differently</h3>
+<p>Open Settings. Kaboot in Hokom can be 26 or 25, the strongest-project-only
+rule can be switched off, and so can the rule where a failed buyer loses
+everything. If your table plays something the app can't express, email me — the
+rules engine is built to take more options.</p>
+
+<h3>Does it need internet?</h3>
+<p>No. The app has no networking code at all. It works with the phone in
+airplane mode.</p>
+
+<h3>Where are my scores kept?</h3>
+<p>On your device only. They survive closing the app and restarting the phone,
+and are deleted when you delete the app. Nothing is uploaded anywhere.</p>
+
+<h3>Is this a card game?</h3>
+<p>No — it keeps score for a game played with real cards. There is no way to
+play a hand in the app, and no wagering of any kind.</p>
+
+<h2>Privacy</h2>
+<p><a href="privacy/">Read the privacy policy</a> — the short version is that the
+app collects nothing.</p>
 
 <div class="ar">
-<h1>سياسة الخصوصية — حاسبة البلوت</h1>
-<p class="updated">آخر تحديث 22 سبتمبر 2026</p>
+  <h1>حاسبة البلوت</h1>
+  <p class="lede">حاسبة نقاط لعبة البلوت. تعمل بدون إنترنت وبدون حساب، ولا تجمع أي معلومات.</p>
 
-<p>حاسبة البلوت تطبيق لتسجيل نقاط لعبة البلوت. لا يجمع التطبيق أي بيانات شخصية.</p>
+  <h2>التواصل</h2>
+  <div class="contact">
+    <p class="label">الدعم</p>
+    <p><a href="mailto:support@walhajri.me">support@walhajri.me</a></p>
+  </div>
+  <p class="label" style="margin-top:.6rem">أي سؤال أو ملاحظة أو قانون تلعبونه بشكل مختلف — راسلني.</p>
 
-<h2>ما الذي يجمعه التطبيق</h2>
-<p>لا شيء. لا يوجد تحليلات ولا إعلانات ولا تقارير أعطال ولا حسابات ولا أي نوع من التتبع.</p>
+  <h2>أسئلة متكررة</h2>
 
-<h2>ما الذي يحفظه التطبيق</h2>
-<p>تُحفظ نتائجك وسجل الجولات والإعدادات على جهازك فقط حتى يكمل التطبيق من حيث توقفت. هذه المعلومات لا تغادر جهازك ولا تُرسل إلى أي مكان، وتُحذف عند حذف التطبيق.</p>
+  <h3>كيف أسجل الجولة؟</h3>
+  <p>اختر حكم أو صن، حدد المشتري، واكتب أبناط فريق واحد. التطبيق يطلع لك أبناط الفريق الثاني والنقاط والمجموع.</p>
 
-<h2>الاتصال بالإنترنت</h2>
-<p>التطبيق لا يحتوي على أي كود للاتصال بالشبكة. يعمل بدون إنترنت تماماً ولا يرسل أي طلب لأي خادم.</p>
+  <h3>وش الفرق بين طرق الإدخال؟</h3>
+  <p><strong>أبناط</strong> — تكتب الأبناط والتطبيق يحولها. <strong>نقاط</strong> — تكتب النتيجة جاهزة (16 في الحكم، 26 في الصن). <strong>يدوي</strong> — تكتب نتيجة كل فريق بنفسك والتطبيق يجمعها كما هي.</p>
 
-<h2>الأطراف الثالثة</h2>
-<p>لا تتم مشاركة أي بيانات مع أي طرف ثالث، لأنه لا تُجمع أي بيانات أصلاً.</p>
+  <h3>طاولتنا تلعب بقانون مختلف</h3>
+  <p>افتح الإعدادات: كبوت الحكم 26 أو 25، أقوى مشروع فقط، والأكلة على المشتري — كلها قابلة للتغيير. إذا عندكم قانون ما يغطيه التطبيق راسلني.</p>
 
-<h2>التواصل</h2>
-<p>للاستفسار عن هذه السياسة: <a href="mailto:support@walhajri.me">support@walhajri.me</a></p>
+  <h3>يحتاج إنترنت؟</h3>
+  <p>لا. التطبيق ما فيه أي اتصال بالشبكة ويشتغل وضع الطيران.</p>
+
+  <h3>وين تنحفظ النتائج؟</h3>
+  <p>على جهازك فقط. تبقى بعد إغلاق التطبيق وإعادة تشغيل الجوال، وتنحذف مع حذف التطبيق.</p>
+
+  <h2>الخصوصية</h2>
+  <p><a href="privacy/">سياسة الخصوصية</a> — باختصار: التطبيق لا يجمع أي شيء.</p>
 </div>
 
-<p style="margin-top:2.5rem"><a href="https://walhajri.me/baloot/">← Support</a></p>
+<footer>
+  <p>Baloot — حاسبة البلوت · <a href="mailto:support@walhajri.me">support@walhajri.me</a></p>
+</footer>
 
 </body>
 </html>
